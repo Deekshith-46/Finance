@@ -5,7 +5,7 @@ const CustomTooltip = ({ active, payload }) => {
     if (active && payload && payload.length) {
         return (
             <div className="bg-pink-200 p-2 rounded shadow-lg border border-pink-300">
-                <p className="text-lg font-bold text-indigo-900">${payload[0].value.toFixed(2)}</p>
+                <p className="text-lg font-bold text-indigo-900">₹{payload[0].value.toFixed(2)}</p>
                 <p className="text-sm text-gray-700">Month: {payload[0].payload.name}</p>
             </div>
         );
